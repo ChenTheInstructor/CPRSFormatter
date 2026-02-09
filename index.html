@@ -2770,7 +2770,7 @@ function fr()
 			}
 			var bmp1 = corNa + "| " + pgetValList(listVals, "CHLORIDE", inList, "  ***") + " | " + pgetValList(listVals, "UREA NITROGEN", inList, "  ***") + " /";
 			var bmp2 = replicate("-", 22)  + " " + getValList(listVals, "Glucose", inList, "***");
-			var bmp3 = corK + "| " + pgetValList(listVals, "CO2", inList, "  ***") + " | " + pgetValList(listVals, "Creatinine", inList, "  ***") + " \\ Gap: " + anionGap;
+			var bmp3 = corK + "| " + pgetValList(listVals, "CO2", inList, "  ***") + " | " + pgetValList(listVals, "Creatinine", inList, "  ***"); // + " \\ Gap: " + anionGap;
 			var mL = Math.max(replaceTags(bmp0).length, replaceTags(bmp1).length, replaceTags(bmp2).length, replaceTags(bmp3).length);
 			if(t2 != -1)
 			{
@@ -2867,7 +2867,7 @@ function fr()
 				
 				bmp1 += corNa2 + "| " + pgetValList(listVals, "CHLORIDE", inList, "  ***") + " | " + pgetValList(listVals, "UREA NITROGEN", inList, "  ***") + " /";
 				bmp2 += replicate("-", 22) + " " + getValList(listVals, "Glucose", inList, "***");
-				bmp3 += corK2 + "| " + pgetValList(listVals, "CO2", inList, "  ***") + " | " + pgetValList(listVals, "Creatinine", inList, "  ***") + " \\ Gap: " + anionGap;
+				bmp3 += corK2 + "| " + pgetValList(listVals, "CO2", inList, "  ***") + " | " + pgetValList(listVals, "Creatinine", inList, "  ***");// + " \\ Gap: " + anionGap;
 			}		
 			bmp4 = "";
 			
