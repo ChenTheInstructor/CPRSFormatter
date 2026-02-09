@@ -177,6 +177,15 @@ replaceArray["TOTAL PROTEIN,SERUM"] = "Protein";
 replaceArray["LIPASE (LX)"] = "Lipase"; 
 replaceArray["HGB A1C"] = "A1c";
 
+/*
+AST                              61 H   IU/L       10 - 35          [664]
+ALT                              43 H   IU/L       10 - 40          [664]
+ALKALINE PHOSPHATASE             67     IU/L       38 - 126         [664]
+BILIRUBIN TOTAL                 0.7     mg/dL      0.4 - 1.2        [664]
+ALBUMIN LEVEL                   3.6     g/dL       3.2 - 4.6        [664]
+
+*/
+
 // KAY CHEN CHANGES
 replaceArray["SODIUM LEVEL"] = "SODIUM";
 replaceArray["POTASSIUM LEVEL"] = "POTASSIUM";
@@ -2706,8 +2715,8 @@ function fr()
 				corNa = Math.round(corNa + 0.016 * (gluc - 100)) + "*";
 				agN = Math.round(corNa + 0.016 * (gluc - 100));
 				// Kay Chen troubleshooting
-				alert("corNa: " + corNa + "\ngluc: " + gluc);
-				alert("Glucose: " + getValList(listVals, "Glucose", inList, "  ***"));
+				// alert("corNa: " + corNa + "\ngluc: " + gluc);
+				// alert("Glucose: " + getValList(listVals, "Glucose", inList, "  ***"));
 				if(corNa < 135 || corNa > 145)
 				{
 					corNa = "<span style='color: red; font-weight: bold'>" + pad(corNa,6) + "</span>";
